@@ -33,7 +33,7 @@ gem "thruster", require: false
 # gem "image_processing", "~> 1.2"
 
 # Use Rack CORS for handling Cross-Origin Resource Sharing (CORS), making cross-origin Ajax possible
-# gem "rack-cors"
+gem "rack-cors"
 
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
@@ -46,7 +46,17 @@ group :development, :test do
   gem "rubocop-rails-omakase", require: false
 end
 
-# adding neccesary gems
+# User authentication and authorization
+# Provides a flexible authentication solution for Rails applications
+# Includes features like sign up, login, password reset, and session management
 gem "devise"
+
+# Image processing capabilities for Active Storage
+# Allows you to transform images using ImageMagick or libvips
+# Useful for resizing, cropping, and applying other image transformations
 gem "image_processing"
+
+# Validations for Active Storage attachments
+# Provides additional validation options for file uploads
+# Helps ensure uploaded files meet specific criteria (size, type, etc.)
 gem "active_storage_validations"
