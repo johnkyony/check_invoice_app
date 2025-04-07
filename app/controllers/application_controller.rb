@@ -2,4 +2,7 @@
 # Inherits from ActionController::API to provide API-only functionality
 # This means the application is configured as a JSON API without view rendering
 class ApplicationController < ActionController::API
+  def up
+    render plain: "OK"
+  end
 end

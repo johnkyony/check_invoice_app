@@ -35,10 +35,13 @@ function App() {
         checkAPI.getAll(),
       ]);
 
+      // const mergedArray = invoicesRes.data.filter(invoice => invoice.companyId === checksRes.data.companyId);
+      console.log(checksRes.data);
       // Update state with fetched data
       setCompanies(companiesRes.data);
       setInvoices(invoicesRes.data);
       setChecks(checksRes.data);
+
     } catch (error) {
       console.error('Error fetching data:', error);
     }
