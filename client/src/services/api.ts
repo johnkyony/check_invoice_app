@@ -6,7 +6,7 @@ import axios from 'axios';
 import { Company, Invoice, Check, CheckInvoice } from '../types';
 
 // Base URL for all API requests
-const API_BASE_URL = 'http://localhost:3000';
+const API_BASE_URL = 'https://check-invoices-b0684a95ff75.herokuapp.com/';
 
 // Create an axios instance with default configuration
 const api = axios.create({
