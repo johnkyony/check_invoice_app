@@ -82,7 +82,7 @@ test:
 production:
   primary: &primary_production
     <<: *default
-    url: <%= ENV['HEROKU_POSTGRESQL_MAUVE_URL'] %>
+    url: <%= ENV['DATABASE_URL'] %>
     database: check_invoice_app_production
     username: check_invoice_app
     password: <%= ENV["CHECK_INVOICE_APP_DATABASE_PASSWORD"] %>
